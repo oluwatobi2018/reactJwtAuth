@@ -14,8 +14,7 @@ class App extends React.Component {
         this.state = {
             currentUser: null
         };
-    }
-
+   
     componentDidMount() {
         authenticationService.currentUser.subscribe(x => this.setState({ currentUser: x }));
     }
